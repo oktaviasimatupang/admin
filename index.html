@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+    <link href="css/dashboard.css" rel="stylesheet"/>
+  </head>
+
+  <body id="page-top" class="pengumuman-page">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center" href="index.html">
+          <div class="sidebar-brand-icon">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <div class="sidebar-brand-text mx-3">
+            Administrator    
+          </div>
+        </a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider my-2" />
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+        
+        <!-- Nav Item - pengumuman -->
+        <li class="nav-item">
+          <a class="nav-link" href="pengumuman.html">
+            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+            <span>Pengumuman</span>
+          </a>
+        </li>
+
+        <!-- Nav Item - program pendidikan -->
+        <li class="nav-item">
+          <a class="nav-link" href="program_pendidikan.html">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <span>Pendidikan</span>
+          </a>
+        </li>
+
+        <!-- Nav Item - lembaga -->
+        <li class="nav-item">
+          <a class="nav-link" href="lembaga.html">
+            <i class="fas fa-fw fa-landmark"></i>
+            <span>Lembaga</span>
+          </a>
+        </li>   
+        
+        <!-- Nav Item - fasilitas -->
+        <li class="nav-item">
+          <a class="nav-link" href="fasilitas.html">
+            <i class="fa fa-building" aria-hidden="true"></i>
+            <span>Fasilitas</span>
+          </a>
+        </li> 
+
+        
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block" />
+
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+          >
+            <!-- Sidebar Toggle (Topbar) -->
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Topbar Search -->
+            <form
+              class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
+            >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="basic-addon2"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button">
+                    <i class="fas fa-search fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="searchDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+
+
+              <!-- Nav Item - User Information -->
+              <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="img/logo del.jpeg" class="img-fluid" alt="Logo" style="max-width: 70px; height: 65px; margin-right: 10px;" />
+                    <span class="mr-2 d-none d-lg-inline text-gray-800 small" style="font-size: 20px; line-height: 1;">
+                        <strong>Institut Teknologi Del</strong><br>
+                        <span style="font-size: 12px; font-weight: bold;">MarTuhan, Marroha, Marbisuk</span>
+                    </span>
+                </a>
+            </li>
+            
+
+                <!-- Dropdown - User Information -->
+              </li>
+            </ul>
+          </nav>
+          <!-- End of Topbar -->
+
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div
+              class="d-sm-flex align-items-center justify-content-between mb-4"
+            >
+              <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            </div>
+
+            <!-- Content Row -->
+            <div class="row">
+              <!-- Earnings pengumuman Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                        >
+                          Pengumuman
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                         10
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fa fa-bullhorn fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Earnings program pendidikan Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-success shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-success text-uppercase mb-1"
+                        >
+                        Pendidikan
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          9
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fa fa-graduation-cap fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Earnings lembaga Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-info shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-info text-uppercase mb-1"
+                        >
+                          Lembaga
+                        </div>
+                        <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                            <div
+                              class="h5 mb-0 mr-3 font-weight-bold text-gray-800"
+                            >
+                              8
+                            </div>
+                          </div>
+                          <div class="col">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i
+                          class="fas fa-fw fa-landmark fa-2x text-gray-300"
+                        ></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pending fasilitas Card Example -->
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-warning shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div
+                          class="text-xs font-weight-bold text-warning text-uppercase mb-1"
+                        >
+                         Fasilitas
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">
+                          7
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fa fa-building fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+                  <!-- Pegumuman Card -->
+                  <div class="col-xl-5 col-md-6 mb-5 mx-auto">
+                    <div class="card shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="text-lg font-weight-bold text-primary text-uppercase mb-1">
+                            Pengumuman
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <img src="img/pengumuman.jpg" class="img-fluid" alt="Pengumuman Image" style="max-width: 100%; height: auto;" />
+                        </div>
+                        <p class="mt-3">Pada Hari Sabtu 23 September 2023, Institut Teknologi Del melaksanakan Wisuda untuk 398 Mahasiswa Sarjana dan Diploma. 
+                          Turut hadir Bapak Dr. Honoris Causa Ir. Airlangga Hartarto, MBA, MMT (Menteri Koordinator Bidang Perekonomian Republik Indonesia), 
+                          Bapak Rionald Silaban (Direktorat Jendral Kekayaan Negara),  Bapak Jend. TNI (Purn.) Luhut Binsar Pandjaitan, M.P.A (Ketua Pembina Yayasan Del), 
+                          Ibu Intan Simanjuntak (Ketua Pengurus Yayasan Del), dan tamu undangan lainnya. Kegiatan Wisuda ini dilaksanakan di Gedung Serba Guna Yayasan Del dengan tema 
+                          “Fostering Collaboration and Innovation towards Research Excellence”.</p>
+                      </div>
+                    </div>
+                  </div>
+
+            
+                  <!-- Program Pendidikan Card -->
+                  <div class="col-xl-5 col-md-6 mb-5 mx-auto">
+                    <div class="card shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="text-lg font-weight-bold text-primary text-uppercase mb-1">
+                            Pendidikan
+                          </div>
+                        </div>
+                        <h6>APA itu Program Studi?</h6>
+                        <p>Program studi adalah kesatuan rencana belajar sebagai pedoman penyelenggaraan pendidikan akademik dan/atau profesional 
+                          yang diselenggarakan atas dasar suatu kurikulum serta ditujukan agar mahasiswa dapat 
+                          menguasai pengetahuan, keterampilan, dan sikap sesuai dengan sasaran kurikulum.</p>
+                          <div class="col-auto">
+                            <img src="img/program_pendidikan.png" class="img-fluid" alt="Program_pendidikan Image" style="max-width: 90%; height: auto;" />
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="row">
+                  <!-- Program Lembaga Card -->
+                  <div class="col-xl-5 col-md-6 mb-5 mx-auto">
+                    <div class="card shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="text-lg font-weight-bold text-primary text-uppercase mb-1">
+                            Lembaga
+                          </div>
+                        </div>
+                        <h5>Lembaga Penelitian dan Pengabdian Masyarakat (LPPM)</h5>
+                        <ul>
+                          <h6>LPPM Institut Teknologi Del</h6>
+
+                            Lembaga Penelitian dan Pengabdian Masyarakat (LPPM) adalah lembaga yang berada di bawah Institut Teknologi Del yang mempunyai tugas untuk mengkoordinasikan, memantau, dan menilai pelaksanaan kegiatan penelitian dan pengabdian kepada masyarakat yang diselenggarakan oleh LPPM, GBK, Program Studi, kelompok dan perorangan. LPPM mengusahakan pengendalian dalam hal penggunaan sumber daya, serta mengusahakan pengembangan dan peningkatan mutu penelitian dan pengabdian kepada masyarakat.
+                            
+                            <h6>Visi LPPM IT Del:</h6>
+                            
+                            Menjadi lembaga yang unggul dan mandiri dalam pelaksanaan penelitian, khususnya kepada pengembangan dan pemanfaatan teknologi informasi dan komunikasi, dan pengabdian kepada masyarakat.
+                            
+                            Misi LPPM IT Del adalah sebagai berikut :
+                            
+                            <li>Mengembangkan sumber daya pendidikan dan pengajaran di kampus dan masyarakat umumnya melalui penelitian dan pemanfaatan hasil penelitian.</li>
+                            <li>Menghasilkan penelitian dan kajian-kajian akademik berkualitas yang memberikan dampak pada pengembangan institusi, baik untuk tingkat lokal, nasional, maupun internasional.</li>
+                            <li>Mendiseminasikan hasil-hasil penelitian melalui seminar, lokakarya, dan media lainnya sehingga mencapai sasaran seluas-luasnya.</li>
+                            <li>Mengembangkan kegiatan pengabdian masyarakat yang profesional, berbasis ilmu pengetahuan dan teknologi, khususnya teknologi informasi dan komunikasi.</li>
+                            <li>Meningkatkan kemampuan dan peran serta dosen dan mahasiswa dalam penelitian dan pemberdayaan pada masyarakat.</li>
+                            
+                            <h6>Fungsi dan Tugas LPPM IT Del</h6>
+                            
+                            <h6>Bidang Penelitian</h6>
+                            
+                            <h6>A. Internal</h6>
+                            
+                            <li>Mengkoordinir penelitian di GBK, prodi dan penelitian oleh kelompok atau perorangan.</li>
+                            <li>Menyebarkan informasi yang berkaitan dengan penelitian, misalnya informasi dari Dirjen Dikti atau Kementerian Riset dan Teknologi.</li>
+                            <li>Membantu meningkatkan kemampuan meneliti para dosen IT Del</li>
+                            <li>Membantu meningkatkan mutu penelitian dengan mengadakan pelatihan dan kegiatan ilmiah untuk diseminasi dan pembahasan hasil penelitian.</li>
+                            <li>Membantu menanggulangi masalah-masalah dalam pelaksanaan penelitian di GBK, prodi dan penelitian oleh kelompok atau perorangan.</li>
+                            <li>Membantu dosen dalam publikasi hasil penelitian.</li>
+                            <li>Membantu dosen dengan pengembangan kebijakan insentif untuk kegiatan penelitian.</li>
+                            
+                            <h6>B. Eksternal</h6>
+                            
+                            <li>Mendapatkan informasi yang berkaitan dengan penelitian, misalnya dari Direktorat Jendral Pendidikan Tinggi </li>
+                            <li>DepDikBud (informasi tentang Hibah Bersaing, dan lain-lain dana penelitian yang terbuka bagi PTS). Juga dengan instansi pemerintah, non-pemerintah, dan donor internasional lainnya, misalnya informasi insentif riset dari Kementerian Riset dan Teknologi.</li>
+                            <li>Mengembangkan jejaring penelitian bersama dengan Politeknik yang ada di Indonesia.</li>
+                            <li>Mengembangkan jaringan kerjasama penelitian dengan pemerintah daerah dan berbagai Perguruan Tinggi di Sumatera Utara, Indonesia dan manca Negara.</li>
+                          </p>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Fasilitas Card -->
+                  <div class="col-xl-5 col-md-6 mb-5 mx-auto">
+                    <div class="card shadow h-100 py-2">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="text-lg font-weight-bold text-primary text-uppercase mb-1">
+                            Fasilitas
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <img src="img/fasilitas.jpg" class="img-fluid" alt="fasilitas Image" style="max-width: 100%; height: auto;" />
+                        </div>
+                        <h5>Laboratorium</h5>
+                        <p>
+                          <h6>Laboratorium Komputer dan Bahasa</h6>
+                          Definisi Laboratorium Komputasi adalah ruangan yang dilabeli sebagai laboratorium komputasi yang berisi sekumpulan perangkat yang terdiri atas Komputer Desktop, Laptop, AC, projector, printer, dan perangkat lain sesuai dengan kebutuhan dari laboratorium yang dimaksud.
+                          
+                          Fasilitas laboratorium komputasi dimaksudkan sebagai sarana kerja, pendidikan, penelitian maupun pengabdian pada masyarakat. Kepada para pengguna diharapkan pengertian dan kesadarannya untuk menjaga keutuhan dan keamanan peralatan yang ada, serta berperan dalam menciptakan suasana akademik yang lebih berhasil guna. Kesadaran ini hendaknya diterapkan terhadap semua peralatan sarana dan prasarana yang dimiliki oleh Institut Teknologi Del dan semua sistem komputasi lain yang dapat diakses melalui jaringan komunikasi yang tersedia.
+                          
+                          Pembagian Laboratorium Komputer di IT Del:
+                          <h6>1. Laboratorium Komputer</h6>
+                          
+                          Terdapat 8 ruangan laboratorium yang terbagi menjadi:
+                          
+                          <li>3 ruangan untuk tingkat 3 yaitu untuk jurusan Manajemen Informatika (MI), Teknik Informasi (TI), dan Teknik Komputer (TK).</li>
+                          
+                          <li>4 Ruang Laptop (Laptop Room) yang merupakan laboratorium yang dikhususkan untuk mahasiswa yang menggunakan Laptop pada saat kuliah, praktikum maupun praktek. 3 ruangan untuk Kelas 1 dan 2 ruangan untuk Kelas 2.</li>
+                          
+                          <li>1 Ruangan Training, yang digunakan untuk hal khusus seperti acces internet, ruang pelatihan dll.</li>
+                          
+                          Untuk tiap unit komputer terhubung ke Local Area Network dan dapat melakukan akses internet. Untuk pengguna Laptop dapat menggunakan wireless untuk terhubung ke Local Area Network, dan dapat juga menggunakan kabel LAN.
+                          
+                          <h6>2. Laboratorium Bahasa</h6>
+                          Fasilitas ini disediakan untuk:
+                          <li>Sebagai ruang rapat bagi dosen.</li>
+                          <li>Mahasiswa yang sedang mengadakan acara seperti DEC (Del english Club)</li>
+                          <li>Ruangan saat mahasiswa melaksanakan sidang, presentasi proyek, dll</li>
+                          
+                          Adapun fasilitas yang disediakan adalah:
+                          <li>1 Unit PC yang dikhususkan dipakai oleh operator</li>
+                          <li>Headphone sebanyak 10 buah</li>
+                          <li>1 buah infokus</li>
+                          <li>Dilengkapi dengan meja dan kursi</li>
+                          
+                          Fungsi Laboratorium di Institut Teknologi Del adalah:
+                          <li>Sebagai laboratorium pengajaran</li>
+                          <li>Sebagai laboratorium mandiri mahasiswa</li>
+                          <li>Sebagai laboratorium pelatihan</li>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+        <!-- Footer -->
+        <div class="footerBottom">
+          <p>Copyright &copy;2023: Website institut Teknologi Del</p>
+        </div>
+
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+  </body>
+</html>

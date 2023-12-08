@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+.table-responsive {
+    max-width: 900px;
+    background-color: #efefef33;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    font-size: 14px;
+    color: #444;
+    white-space: normal; /* Changed from nowrap to normal */
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table>thead {
+    background-color: #5EBFA4;
+    color: whitesmoke;
+}
+
+table>thead th {
+    padding: 15px;
+}
+
+table th,
+table td {
+    border: 1px solid rgb(200, 199, 199);
+    padding: 10px 15px;
+}
+
+table>tbody>tr>td>img {
+    display: block; /* Changed from inline-block to block */
+    width: 100%; /* Adjusted to take full width of the container */
+    height: auto; /* Allowing proportional scaling */
+    object-fit: cover;
+}
+
+.action_btn {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+.action_btn > a {
+    text-decoration: none;
+    color: #444;
+    background: whitesmoke;
+    border: 1px solid;
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: 1s ease-in-out;
+}
+
+.action_btn > a:hover {
+    background-color: #ddd;
+}

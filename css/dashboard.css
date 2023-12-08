@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #5EBFA4 !important;
+}
+
+.bg-gradient-primary {
+  background: #5EBFA4 !important;
+}
+
+.footerBottom {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+}
+
